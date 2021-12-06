@@ -309,6 +309,29 @@ input {
   background-color: #ffffff;
 }
 
+.header {
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.header--active {
+  margin: auto;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 лого .header__logo {
   font-family: "Raleway";
   font-style: 400;
