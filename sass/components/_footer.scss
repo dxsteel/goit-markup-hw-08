@@ -1,0 +1,184 @@
+//футер
+
+.footer {
+  background-color: #2f303a;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+//контакты футера
+
+.footer__contacts {
+  display: block;
+}
+
+//лого
+
+.footer__logo {
+  font-family: "Raleway";
+  font-style: 400;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  text-decoration: none;
+
+  &--white {
+    color: $white-color;
+  }
+}
+
+//список контактов
+
+.footer__item {
+  width: 231px;
+  margin-top: 20px;
+
+  &--bottom {
+    margin-bottom: 9px;
+  }
+  &--bottom:last-child {
+    margin-bottom: 0;
+  }
+}
+.site-nav__contacts--change-color {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  @include animation;
+}
+.footer__address {
+  font-style: normal;
+  color: $white-color;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ссылки футера */
+
+.footer__links {
+  padding-left: 70px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+.footer__title {
+  display: flex;
+  color: $white-color;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.footer__social-links {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+
+  &--background-hover {
+    padding: 0;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+    @include animation;
+  }
+
+  &--background-hover:last-child {
+    margin-right: 0;
+  }
+
+  &--svg-hover {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    fill: $white-color;
+    @include animation;
+  }
+  &--svg-hover:hover,
+  &--background-hover:hover {
+    background-color: $accent-color;
+    fill: $white-color;
+  }
+}
+/* форма футера */
+
+.footer__form {
+  display: flex;
+  align-items: center;
+  width: 770px;
+  padding-left: 93px;
+
+  &--position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.footer__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  color: $white-color;
+  background-color: $accent-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+
+  &--position {
+    margin-left: 10px;
+    margin-bottom: 92px;
+    margin-top: 133px;
+  }
+  &--icon {
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,45 @@
+//секция "достоинства команды"
+
+.section__benefits {
+  padding-bottom: 0px;
+}
+.feature {
+  display: flex;
+
+  &__list {
+    width: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
+  }
+  &__list:nth-child(4n) {
+    margin-right: 0;
+  }
+  &__icon {
+    padding: 25px 100px 25px 100px;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+  }
+
+  &__text {
+    color: $p-text-color;
+    font-style: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    display: flex;
+  }
+
+  &__title {
+    display: flex;
+    color: $primary-text-color;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+}
