@@ -4,21 +4,47 @@
   padding-bottom: 0px;
 }
 .feature {
-  display: flex;
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+    display: flex;
+  }
 
   &__list {
-    width: calc((100% - 3 * 30px) / 4);
-    margin-right: 30px;
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 3 * 30px) / 4);
+      margin-right: 30px;
+    }
   }
   &__list:nth-child(4n) {
-    margin-right: 0;
+    @media screen and (min-width: $desktop) {
+      margin-right: 0;
+    }
   }
   &__icon {
     padding: 25px 100px 25px 100px;
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     background-color: #f5f4fa;
+    @media screen and (min-width: $mobile) {
+      max-width: 480px;
+      width: 450px;
+      margin-top: 30px;
+    }
+    @media screen and (min-width: $tablet) {
+      max-width: 768px;
+      width: 354px;
+      margin-top: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 1200px;
+      width: 270px;
+    }
   }
 
   &__text {
@@ -27,11 +53,9 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    display: flex;
   }
 
   &__title {
-    display: flex;
     color: $primary-text-color;
     font-style: 400;
     font-weight: 700;
@@ -41,5 +65,9 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     margin-top: 0px;
+    @media screen and (min-width: $mobile) {
+      max-width: 480px;
+      text-align: center;
+    }
   }
 }

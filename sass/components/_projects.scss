@@ -1,43 +1,43 @@
 //секция "чем мы занимаемся"
 
-.section__title {
-  color: $primary-text-color;
-  font-style: 400;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
-.projects {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+// .section__title {
+//   color: $primary-text-color;
+//   font-style: 400;
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.2;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   margin-top: 0px;
+//   margin-bottom: 50px;
+// }
+// .projects {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
 
-  &__position {
-    position: relative;
-    display: flex;
-  }
+//   &__position {
+//     position: relative;
+//     display: flex;
+//   }
 
-  &__title {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    color: $primary-text-color;
-    font-style: 400;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    background: rgba(47, 48, 58, 0.8);
-    color: $white-color;
-    height: 70px;
-    width: 370px;
-  }
-}
+//   &__title {
+//     position: absolute;
+//     bottom: 0;
+//     display: flex;
+//     justify-content: center;
+//     padding-top: 27px;
+//     padding-bottom: 27px;
+//     color: $primary-text-color;
+//     font-style: 400;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.5;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     background: rgba(47, 48, 58, 0.8);
+//     color: $white-color;
+//     height: 70px;
+//     width: 370px;
+//   }
+// }

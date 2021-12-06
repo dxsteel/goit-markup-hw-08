@@ -1,106 +1,108 @@
 // хедер
 
-.header {
-  margin: auto;
-  background-color: $white-color;
+// .header {
+//   margin: auto;
+//   background-color: $white-color;
 
-  &--active {
-    margin: auto;
-    background-color: $white-color;
-    border-bottom: 1px solid #ececec;
-  }
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
+//   &--active {
+//     margin: auto;
+//     background-color: $white-color;
+//     border-bottom: 1px solid #ececec;
+//   }
+//   &__container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+// }
 
-лого .header__logo {
-  font-family: "Raleway";
-  font-style: 400;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  font-weight: bold;
-  text-decoration: none;
-  margin-right: 93px;
+// // // лого
 
-  &--accent {
-    color: $accent-color;
-  }
-  &--primary {
-    color: $primary-text-color;
-  }
-}
+// .header__logo {
+//   font-family: "Raleway";
+//   font-style: 400;
+//   font-size: 26px;
+//   line-height: 1.2;
+//   letter-spacing: 0.03em;
+//   font-weight: bold;
+//   text-decoration: none;
+//   margin-right: 93px;
 
-// навигация
+//   &--accent {
+//     color: $accent-color;
+//   }
+//   &--primary {
+//     color: $primary-text-color;
+//   }
+// }
 
-.site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+// // // навигация
 
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: $primary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    @include animation;
+// .site-nav {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
 
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-    &--current {
-      color: $accent-color;
-    }
-    &--current::after {
-      position: absolute;
-      bottom: 0;
-      content: "";
-      display: block;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: $accent-color;
-    }
-    &:hover > .site-nav__icon-contact,
-    &:focus > .site-nav__icon-contact {
-      fill: $accent-color;
-    }
-  }
-}
+//   &__link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     color: $primary-text-color;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.15;
+//     letter-spacing: 0.02em;
+//     text-decoration: none;
+//     @include animation;
 
-//контакты
+//     &:hover,
+//     &:focus {
+//       color: $accent-color;
+//     }
+//     &--current {
+//       color: $accent-color;
+//     }
+//     &--current::after {
+//       position: absolute;
+//       bottom: 0;
+//       content: "";
+//       display: block;
+//       width: 100%;
+//       height: 4px;
+//       border-radius: 2px;
+//       background-color: $accent-color;
+//     }
+//     &:hover > .site-nav__icon-contact,
+//     &:focus > .site-nav__icon-contact {
+//       fill: $accent-color;
+//     }
+//   }
+// }
 
-.site-nav__item {
-  margin-right: 50px;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  position: relative;
+// //контакты
 
-  &:last-child {
-    margin-right: 0px;
-  }
-}
+// .site-nav__item {
+//   margin-right: 50px;
+//   display: block;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   position: relative;
 
-.site-nav__contacts {
-  display: flex;
-  text-decoration: none;
-  align-items: center;
-  color: $p-text-color;
-  @include animation;
-}
+//   &:last-child {
+//     margin-right: 0px;
+//   }
+// }
 
-.site-nav__icon-contact {
-  margin-right: 10px;
-  fill: $p-text-color;
-  @include animation;
-}
+// .site-nav__contacts {
+//   display: flex;
+//   text-decoration: none;
+//   align-items: center;
+//   color: $p-text-color;
+//   @include animation;
+// }
+
+// .site-nav__icon-contact {
+//   margin-right: 10px;
+//   fill: $p-text-color;
+//   @include animation;
+// }
