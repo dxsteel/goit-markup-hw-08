@@ -1,43 +1,71 @@
 //секция "чем мы занимаемся"
 
-// .section__title {
-//   color: $primary-text-color;
-//   font-style: 400;
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.2;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   margin-top: 0px;
-//   margin-bottom: 50px;
-// }
-// .projects {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
+.section__title {
+  color: $primary-text-color;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+.section__title--hidden {
+  color: $primary-text-color;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 
-//   &__position {
-//     position: relative;
-//     display: flex;
-//   }
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
-//   &__title {
-//     position: absolute;
-//     bottom: 0;
-//     display: flex;
-//     justify-content: center;
-//     padding-top: 27px;
-//     padding-bottom: 27px;
-//     color: $primary-text-color;
-//     font-style: 400;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 1.5;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     background: rgba(47, 48, 58, 0.8);
-//     color: $white-color;
-//     height: 70px;
-//     width: 370px;
-//   }
-// }
+  &__position {
+    position: relative;
+    display: flex;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: $primary-text-color;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: $white-color;
+    height: 70px;
+    width: 370px;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+}

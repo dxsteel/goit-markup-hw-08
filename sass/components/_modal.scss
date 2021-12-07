@@ -34,7 +34,10 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   @include animation;
-
+  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
   &__title {
     font-style: normal;
     font-weight: bold;
