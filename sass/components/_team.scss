@@ -19,6 +19,9 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       width: calc(100% - 2 * 30px) / 2;
       margin-right: 30px;
@@ -63,11 +66,16 @@
 }
 .team__social-link {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
   padding-top: 16px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
   &--position {
     padding: 0;
