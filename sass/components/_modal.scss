@@ -23,8 +23,8 @@
 //информативный текст
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -34,9 +34,22 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   @include animation;
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
-    width: 450px;
-    height: 609px;
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    width: calc(100% - 2 * 15px);
+    max-width: 450px;
+    max-height: 609px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc(100% - 2 * 15px);
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    max-height: 609px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
   }
   &__title {
     font-style: normal;
@@ -48,22 +61,24 @@
     margin-bottom: 12px;
     color: $primary-text-color;
     padding-top: 40px;
+    @media screen and (max-width: 1199px) {
+      width: calc(100% - 2 * 15px);
+    }
   }
 }
 
 //кнопка закрытия окна
 
 .modal__button {
-  margin-right: 8px;
-  margin-top: 8px;
-  margin-left: 490px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   background: $white-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
-  position: absolute;
   fill: $primary-text-color;
 
   &:hover,
@@ -176,6 +191,15 @@
   padding: 0;
   margin-bottom: 4px;
 }
+.feature__text--modal {
+  @media screen and (max-width: 1199px) {
+    color: $p-text-color;
+    font-style: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
 
 .policy {
   color: $accent-color;
@@ -185,6 +209,10 @@
   line-height: 1.7;
   text-decoration: underline;
   padding-left: 3px;
+  @media screen and (max-width: 1199px) {
+    font-size: 11px;
+    line-height: 1.16;
+  }
 
   &:focus,
   &:hover {

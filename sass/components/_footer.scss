@@ -47,6 +47,10 @@
 
   &--bottom {
     margin-bottom: 9px;
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      justify-content: center;
+    }
   }
   &--bottom:last-child {
     margin-bottom: 0;
