@@ -18,6 +18,11 @@
             <nav class="header__container">
                 <a class="header__logo" href=""><span class="header__logo--accent">Web</span><span
                         class="header__logo--primary">Studio</span></a>
+<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <svg width="40" height="40">
+        <use href="./images/symbol-defs.svg#icon-menu_open"></use>
+    </svg>
+</button>
                 <ul class="site-nav">
                     <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
                     <li class="site-nav__item"><a class="site-nav__link "
@@ -40,6 +45,46 @@
                 </li>
             </ul>
         </div>
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <nav class="mobile-nav">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu_close"></use>
+        </svg>
+      </button>
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+                <a class="link current" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a class="link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item"><a class="link" href="">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <ul class="mobile-contact__list">
+        <li class="mobile-contact__item">
+            <a class="mobile-contact__item--tel" href="tell:+380961111111">
+            +38 096 111 11 11</a>
+         </li>
+        <li class="mobile-contact__item">
+            <a class="mobile-contact__item--mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a>
+        </li>    
+    </ul>
+    <ul class="mobile__social-link">
+        <li><a class="mobile__social-link--style" href="https://www.instagram.com">Instagram</a></li>
+        <span class="devider">|</span>
+        <li><a class="mobile__social-link--style" href="https://www.twitter.com">Twitter</a></li>
+        <span class="devider">|</span>
+        <li><a class="mobile__social-link--style" href="https://www.facebook.com">Facebook</a></li>
+        <span class="devider">|</span>
+        <li><a class="mobile__social-link--style" href="https://www.linkedin.com">Linkedin</a></li>
+    </ul>
+</div>
+                
+    </div>
     </header>
     <main>
         <section class="hero">
@@ -368,6 +413,10 @@
        </form>
         </div>
     </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
