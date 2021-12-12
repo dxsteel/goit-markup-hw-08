@@ -95,7 +95,9 @@
   margin-bottom: 32px;
 
   &:last-child {
-    margin-bottom: 302px;
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 302px;
+    }
   }
 }
 
