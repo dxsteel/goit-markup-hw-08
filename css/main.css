@@ -513,6 +513,12 @@ img {
   text-align: left;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-contact__item--tel {
+    font-size: 100%;
+  }
+}
+
 .mobile-contact__item--mail {
   color: #757575;
   text-decoration: none;
@@ -522,6 +528,12 @@ img {
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-align: left;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-contact__item--mail {
+    font-size: 100%;
+  }
 }
 
 .mobile__social-link {
@@ -537,6 +549,12 @@ img {
   color: rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 479px) {
+  .devider {
+    font-size: 100%;
+  }
+}
+
 .mobile__social-link--style {
   color: #2196f3;
   text-decoration: none;
@@ -546,6 +564,12 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-align: left;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile__social-link--style {
+    font-size: 14px;
+  }
 }
 
 .site-nav {
